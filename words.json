@@ -1,0 +1,76 @@
+{
+  "csv": "",
+  "words": [
+    {
+      "voc": "burn",
+      "means": [
+        {
+          "pos": "v",
+          "trans": "燒",
+          "tags": [],
+          "score": ""
+        }
+      ]
+    },
+    {
+      "voc": "bill",
+      "means": [
+        {
+          "pos": "n",
+          "trans": "鳥喙",
+          "tags": [],
+          "score": ""
+        },
+        {
+          "pos": "n",
+          "trans": "費用",
+          "tags": [
+            {
+              "month": "Feb",
+              "source": "雜",
+              "day": "27",
+              "week": "w4"
+            }
+          ],
+          "score": ""
+        }
+      ]
+    },
+    {
+      "voc": "diposal",
+      "means": [
+        {
+          "pos": "n",
+          "trans": "處置",
+          "tags": [
+            {
+              "month": "Feb",
+              "source": "雜",
+              "day": "22",
+              "week": "w3"
+            }
+          ],
+          "score": ""
+        }
+      ]
+    },
+    {
+      "voc": "oval",
+      "means": [
+        {
+          "pos": "adj",
+          "trans": "橢圓形的",
+          "tags": [
+            {
+              "month": "Feb",
+              "source": "雜",
+              "day": "26",
+              "week": "w4"
+            }
+          ],
+          "score": ""
+        }
+      ]
+    }
+  ]
+}
