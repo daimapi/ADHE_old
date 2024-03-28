@@ -2,34 +2,19 @@
   "csv": "",
   "words": [
     {
-      "voc": "burn",
-      "means": [
-        {
-          "pos": "v",
-          "trans": "燒",
-          "tags": [],
-          "score": ""
-        }
-      ]
-    },
-    {
       "voc": "bill",
       "means": [
-        {
-          "pos": "n",
-          "trans": "鳥喙",
-          "tags": [],
-          "score": ""
-        },
         {
           "pos": "n",
           "trans": "費用",
           "tags": [
             {
-              "month": "Feb",
-              "source": "雜",
-              "day": "27",
-              "week": "w4"
+              "date": {
+                "month": "Feb",
+                "day": "27",
+                "week": "w4"
+              },
+              "source": "雜"
             }
           ],
           "score": ""
@@ -44,10 +29,12 @@
           "trans": "處置",
           "tags": [
             {
-              "month": "Feb",
-              "source": "雜",
-              "day": "22",
-              "week": "w3"
+              "date": {
+                "month": "Feb",
+                "day": "22",
+                "week": "w3"
+              },
+              "source": "雜"
             }
           ],
           "score": ""
@@ -62,10 +49,47 @@
           "trans": "橢圓形的",
           "tags": [
             {
-              "month": "Feb",
-              "source": "雜",
-              "day": "26",
-              "week": "w4"
+              "date": {
+                "month": "Feb",
+                "day": "26",
+                "week": "w4"
+              },
+              "source": "雜"
+            }
+          ],
+          "score": ""
+        }
+      ]
+    },
+    {
+      "voc": "potentially",
+      "means": [
+        {
+          "pos": "adv",
+          "trans": "潛在地",
+          "tags": [
+            {
+              "date": {
+                "month": "Mar",
+                "day": "27",
+                "week": "w4"
+              },
+              "source": "雜"
+            }
+          ],
+          "score": ""
+        },
+        {
+          "pos": "adv",
+          "trans": "可能地",
+          "tags": [
+            {
+              "date": {
+                "month": "Mar",
+                "day": "27",
+                "week": "w4"
+              },
+              "source": "雜"
             }
           ],
           "score": ""

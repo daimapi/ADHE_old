@@ -1,4 +1,4 @@
-"""test"""
+"""test (UTF-8)"""
 
 from adhe import read_file, csv_link, add_word, save_file
 
@@ -11,10 +11,10 @@ csv_link(wordd, "")
 
 add_word(
     wordd,
-    "oval",
-    "adj",
-    "橢圓形的",
-    [{"month": "Feb", "source": "雜", "day": "26", "week": "w4"}],
+    "potentially",
+    "adv",
+    "可能地",
+    {"date": {"month": "Mar", "day": "27", "week": "w4"}, "source": "雜"}
 )
 
 
