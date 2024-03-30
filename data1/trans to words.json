@@ -1,0 +1,105 @@
+{
+  "csv": "",
+  "words": [
+    {
+      "voc": "可能地",
+      "means": [
+        {
+          "pos": "adv",
+          "trans": "potentially",
+          "tags": [
+            {
+              "date": {
+                "month": "Mar",
+                "day": "27",
+                "week": "w4"
+              },
+              "source": "雜"
+            }
+          ],
+          "score": ""
+        }
+      ]
+    },
+    {
+      "voc": "費用",
+      "means": [
+        {
+          "pos": "n",
+          "trans": "bill",
+          "tags": [
+            {
+              "date": {
+                "month": "Feb",
+                "day": "27",
+                "week": "w4"
+              },
+              "source": "雜"
+            }
+          ],
+          "score": ""
+        }
+      ]
+    },
+    {
+      "voc": "處置",
+      "means": [
+        {
+          "pos": "n",
+          "trans": "diposal",
+          "tags": [
+            {
+              "date": {
+                "month": "Feb",
+                "day": "22",
+                "week": "w3"
+              },
+              "source": "雜"
+            }
+          ],
+          "score": ""
+        }
+      ]
+    },
+    {
+      "voc": "橢圓形的",
+      "means": [
+        {
+          "pos": "adj",
+          "trans": "oval",
+          "tags": [
+            {
+              "date": {
+                "month": "Feb",
+                "day": "26",
+                "week": "w4"
+              },
+              "source": "雜"
+            }
+          ],
+          "score": ""
+        }
+      ]
+    },
+    {
+      "voc": "潛在地",
+      "means": [
+        {
+          "pos": "adv",
+          "trans": "potentially",
+          "tags": [
+            {
+              "date": {
+                "month": "Mar",
+                "day": "27",
+                "week": "w4"
+              },
+              "source": "雜"
+            }
+          ],
+          "score": ""
+        }
+      ]
+    }
+  ]
+}

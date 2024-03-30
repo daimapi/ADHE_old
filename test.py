@@ -1,21 +1,28 @@
 """test (UTF-8)"""
 
-from adhe import read_file, csv_link, add_word, save_file
+# from adhe import *  # read_file, csv_link, add_word, save_file, add_word_seq
 
+import adhe as ad
 
-wordd = read_file()
+words_d = ad.read_file("./data1/words to trans.json")
+trans_d = ad.read_file("./data1/trans to words.json")
 # print(wordd)
 # print(json.dumps(wordd, indent=4).encode('ascii').decode('unicode-escape')) #wordj
 
-csv_link(wordd, "")
+ad.csv_link(words_d, "")
+ad.csv_link(trans_d, "")
 
-add_word(
-    wordd,
+ad.add_word(
+    words_d,
     "potentially",
     "adv",
     "可能地",
-    {"date": {"month": "Mar", "day": "27", "week": "w4"}, "source": "雜"}
+    {"date": {"month": "Mar", "day": "27", "week": "w4"}, "source": "雜"},
+    trans_d,
 )
 
+ad.add_word_seq(words_d, "./val.csv", trans_d)
 
-save_file(wordd)
+
+ad.save_file("./data1/words to trans.json", words_d)
+ad.save_file("./data1/trans to words.json", trans_d)
