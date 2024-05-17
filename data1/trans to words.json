@@ -1,5 +1,5 @@
 {
-  "csv": "",
+  "csv": "./data1/keys",
   "words": [
     {
       "voc": "¥i¯à¦a",
@@ -46,7 +46,7 @@
       "means": [
         {
           "pos": "n",
-          "trans": "diposal",
+          "trans": "disposal",
           "tags": [
             {
               "date": {

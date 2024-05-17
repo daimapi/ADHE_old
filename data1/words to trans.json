@@ -1,5 +1,5 @@
 {
-  "csv": "",
+  "csv": "./data1/keys",
   "words": [
     {
       "voc": "bill",
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "voc": "diposal",
+      "voc": "disposal",
       "means": [
         {
           "pos": "n",

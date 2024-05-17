@@ -30,7 +30,7 @@ def save_file(file_path: str, obj: dict) -> None:
         f.write(json.dumps(obj, indent=2).encode("ascii").decode("unicode-escape"))
 
 
-def csv_link(file_d: dict, edit_d: str) -> None:
+def csv_link(file_d: dict, path: str, init: bool = False) -> None:
     """edit csv link in file_d
         must inculde :
         1.pos.csv
@@ -40,9 +40,9 @@ def csv_link(file_d: dict, edit_d: str) -> None:
 
     Args:
         file_d (dict)
-        edit_d (str)
+        path (str)
     """
-    file_d["csv"] = edit_d
+    file_d["csv"] = path
 
 
 def add_word(
@@ -53,7 +53,7 @@ def add_word(
     tags_tar: dict,
     tran_file_d: dict = None,
 ) -> None:
-    """add new word or meaning to word_file_d
+    """add new word or meaning to word_file_d (or also tran_file_d)
 
     Args:
         word_file_d (dict)
@@ -128,12 +128,12 @@ def add_word_seq(word_file_d: dict, csv_path: str, tran_file_d: dict = None) -> 
 
         # n = 0
         for row in csv_obj:
-            print(row[0])
+            # print(row[0])
             add_word(
                 word_file_d,
-                clear_space(row[2]),
-                clear_space(row[1]),
                 clear_space(row[0]),
+                clear_space(row[1]),
+                clear_space(row[2]),
                 json.loads(row[3].replace('""', '"')),
                 tran_file_d,
             )
@@ -155,3 +155,30 @@ def clear_space(s: str) -> str:
             s = s[:n]
         n += 1
     return s
+
+
+def csv_linker(file_d: dict) -> None:
+    """
+
+    Args:
+        file_d (dict): _description_
+    """
+    link = file_d["csv"]
+    with open(link + "/words.csv", "w+", newline="", encoding="big5") as csvfile:
+        csv_obj = csv.writer(csvfile, delimiter="|")
+        csv_obj.writerows(([i["voc"]] for i in file_d["words"]))
+    # = [i["voc"] for i in file_d["words"]]
+    
+    
+    
+    with open(link + "/pos.csv", "w+", newline="", encoding="big5") as csvfile:
+        csv_obj = csv.writer(csvfile, delimiter="|")
+        csv_obj.writerows(([i["voc"]] for i in file_d["words"]))
+
+def test(file_d):
+    """for test
+
+    Args:
+        file_d
+    """
+    return [(i["voc"]) for i in file_d["words"]]
